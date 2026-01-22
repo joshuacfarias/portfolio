@@ -30,11 +30,12 @@ jobs:
           hugo-version: "0.154.5"
           extended: true
       - name: Build
-        run: hugo -s exampleSite --themesDir .. --baseURL "${{ steps.pages.outputs.base_url }}/" --destination ./public
+        working-directory: exampleSite
+        run: hugo --themesDir .. --baseURL "${{ steps.pages.outputs.base_url }}/"
       - name: Upload Pages artifact
         uses: actions/upload-pages-artifact@v3
         with:
-          path: public
+          path: exampleSite/public
 
   deploy:
     runs-on: ubuntu-latest
