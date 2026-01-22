@@ -1,0 +1,352 @@
+baseURL: "https://hugo-profile.netlify.app"
+languageCode: "en-us"
+title: ""
+theme: hugo-profile
+
+outputs:
+  home:
+    - "HTML"
+    - "RSS"
+    - "JSON"
+  page:
+    - "HTML"
+    - "RSS"
+
+enableRobotsTXT: true
+
+#services:
+  #googleAnalytics:
+    #id: G-MEASUREMENT_ID
+  #disqus:
+    #shortname: your-disqus-shortname
+
+pagination:
+  pagerSize: 3
+
+markup:
+  goldmark:
+    renderer:
+      unsafe: true
+
+Menus:
+  main: []
+    #Dropdown menu
+    # - identifier: dropdown
+    #   title: Example dropdown menu
+    #   name: Dropdown
+    #   weight: 3
+    # - identifier: dropdown1
+    #   title: example dropdown 1
+    #   name: example 1
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 1
+    # - identifier: dropdown2
+    #   title: example dropdown 2
+    #   name: example 2
+    #   url: /#
+    #   parent: dropdown
+    #   weight: 2
+
+params:
+  title: ""
+  description: Text about my cool site
+  # staticPath: ""  # The path to serve the static files from
+  favicon: "/fav.png"
+
+  # Whether to serve bootstrap css and js files from CDN or not. Can be set to true, "css" or "js" to choose between
+  # serving both, only the css, or only the js files through the CDN. Any other value will make so that CDN is not used.
+  # Note the lack of "" in true, it should be of boolean type.
+  useBootstrapCDN: false
+
+  # If you want to load dynamically responsive images from Cloudinary
+  # This requires your images to be uploaded + hosted on Cloudinary
+  # Uncomment and change YOUR_CLOUD_NAME to the Cloud Name in your Cloudinary console
+  # cloudinary_cloud_name: "YOUR_CLOUD_NAME"
+
+  # Whether to add mathjax support on all pages. Alternatively, you can opt-in per page by adding `mathjax: true` in the frontmatter.
+  mathjax: false
+
+  # Whether the fade animations on the home page will be enabled
+  animate: true
+
+  theme:
+    # disableThemeToggle: true
+    # defaultTheme: "light" # dark
+
+  font:
+    fontSize: 1rem # default: 1rem
+    fontWeight: 400 # default: 400
+    lineHeight: 1.5 # default: 1.5
+    textAlign: left # default: left
+
+  # color preference
+  # When using hex codes for colors, quotations must be used along with the # sign
+  # color:
+  #   textColor: "#343a40"
+  #   secondaryTextColor: "#6c757d"
+  #   textLinkColor: "#007bff"
+  #   backgroundColor: "#eaedf0"
+  #   secondaryBackgroundColor: "#64ffda1a"
+  #   primaryColor: "#007bff"
+  #   secondaryColor: "#f8f9fa"
+
+  #   darkmode:
+  #     textColor: "#e4e6eb"
+  #     secondaryTextColor: "#b0b3b8"
+  #     textLinkColor: "#ffffff"
+  #     backgroundColor: "#18191a"
+  #     secondaryBackgroundColor: "#212529"
+  #     primaryColor: "#ffffff"
+  #     secondaryColor: "#212529"
+
+  # If you want to customize the menu, you can change it here
+  navbar:
+    align: ms-auto # Left: ms-auto | center: mx-auto | right: me-auto | Default: ms-auto
+    showBrandLogo: false # Show brand logo in nav bar | default is true
+    brandName: " " # Brand name for the brand | default is the title variable
+    disableSearch: false
+    searchPlaceholder: "Ctrl + K para pesquisar..."
+    stickyNavBar:
+      enable : true
+      showOnScrollUp : true
+    enableSeparator: false
+    menus:
+      disableAbout: false
+      disableExperience: false
+      disableEducation: false
+      disableProjects: false
+      disableAchievements: true
+      disableContact: true
+
+  # Hero
+  hero:
+    enable: true
+    intro: "Oie, meu nome é"
+    title: "Joshua!"
+    subtitle: "Mexendo com tecnologia desde garoto!"
+    content: "Crio conteúdos realistas com IA para redes sociais e anúncios, usando pipelines como ComfyUI e LoRAs para manter consistência e escalar variações. Também edito vídeos e tenho base técnica em Python/SQL/Power BI para montar fluxos do zero e otimizar entregas."
+    image: /images/projects/eu.png
+    bottomImage:
+      enable: true
+    # roundImage: true # Make hero image circular | default false
+    button:
+      enable: false
+
+  # About
+  about:
+    enable: true
+    title: "Sobre mim"
+    image: "/images/projects/eu2.jfif"
+    content: |-
+      Tecnologia sempre fez parte da minha vida. Eu cresci usando, testando e aprendendo, então para mim esse é um caminho natural.
+
+      No momento, meu foco principal está em criação de conteúdo com IA para criativos e redes sociais. Tenho me dedicado a produzir materiais mais dinâmicos e profissionais, trabalhando ritmo, cortes, narrativa e finalização, e usando IA para acelerar etapas como variações visuais, melhorias e ajustes finos. Já criei LoRAs para simular uma influencer no Instagram, usei o ComfyUI para controlar pipelines e manipular elementos de vídeo até chegar exatamente no resultado desejado, e também tenho experiência com FaceFusion para faceswap em projetos de anúncios e conteúdos. Quando preciso adaptar criativos para públicos diferentes, também utilizo ferramentas de dublagem e localização como o DubSmart para gerar versões de áudio e acelerar variações.
+
+      Em paralelo, trago uma base sólida em automação e dados. Tenho 1 ano de experiência em back-end e engenharia de dados, trabalhando com ETL, integração de sistemas e automação de processos com Python, SQL, Lua e Power BI. Esse background em programação me ajuda muito a buscar as ferramentas de verdade e não depender apenas de sites e soluções prontas. Eu baixei e criei LoRAs do zero, procurei modelos, comparei alternativas e montei pipelines completos, em vez de simplesmente pagar para usar plataformas. Isso me permite estar sempre atualizado e usar as melhores ferramentas do mercado, com mais controle sobre qualidade, custo e resultado.
+
+      Além disso, também curso Direito, o que fortalece meu olhar para responsabilidade, comunicação e atenção aos detalhes, algo que eu levo para a forma como documento, organizo e entrego soluções.
+    skills:
+      enable: false
+
+  # Experience
+  experience:
+    enable: true
+    title: "Experiência"
+    items:
+      - company: "Video Creative"
+        jobs:
+          - name: "Produção de criativos em vídeo com IA e “synthetic talent” (FaceFusion)"
+            date: "2025–2026"
+            content: |-
+              - Produzi variações de criativos curtos para campanhas (estilo UGC/direct response), priorizando velocidade de entrega e repetibilidade.
+              - Usei FaceFusion como parte do pipeline para substituição/ajuste de rosto em contextos apropriados (personas sintéticas ou uso autorizado), mantendo consistência de personagem entre variações.
+              - Padronizei um fluxo de qualidade visual (redução de artefatos, alinhamento, estabilidade de frames, correções rápidas) para manter aparência “natural” no feed.
+              - Organizei versões por objetivo de performance: hooks, “problem/solution”, prova/benefícios, oferta e CTA, facilitando testes A/B e iteração.
+              - Entreguei pacotes de criativos prontos para publicação (formato vertical, cortes rápidos, legendas e finalização).
+      - company: "AI Influencer"
+        jobs:
+          - name: "“Estúdio” de influencer 100% IA para Instagram com LoRAs (conteúdo completo)"
+            date: "2025"
+            content: |-
+              - Fui responsável por construir e manter perfis de influencer 100% IA, entregando stories, fotos, carrosséis e vídeos com consistência visual.
+              - Treinei diversas LoRAs para manter identidade fixa da persona (traços/estilo), evitando “mudanças de rosto” e variação estética entre posts.
+              - Defini identidade visual e linha editorial: temas, variações de looks/cenários, formatos de post e calendário de produção.
+              - Criei pacotes recorrentes de conteúdo, com ajustes por campanha e tendência, mantendo padrão de estética e agilidade de entrega.
+              - Estruturei um workflow para escalar produção sem depender só de plataformas “one-click”, com controle de prompts, referências e presets.
+      - company: "Video Pipeline"
+        jobs:
+          - name: "Pipeline avançado com ComfyUI + KlingAI para manipulação e variações de vídeo"
+            date: "2026"
+            content: |-
+              - Usei ComfyUI para montar pipelines modulares de criação/edição com IA, ganhando controle fino do resultado em vez de depender só de sites prontos.
+              - Manipulei elementos visuais e refinamentos até chegar no resultado desejado (consistência, estilo, detalhes), com presets reutilizáveis.
+              - Combinei criação de LoRA voltada para vídeo com geração/variação via KlingAI, direcionando para peças curtas e iteráveis.
+              - Mantive biblioteca de modelos/configs e organizei fluxos para repetir resultados com previsibilidade (ótimo para produção em volume).
+              - Integrei o processo ao acabamento de edição (ritmo, cortes, narrativa e finalização) para entregar criativos prontos para campanha.
+      - company: "Casa Civil RJ"
+        jobs:
+          - name: "Assistente Administrativo (Dados e Automação)"
+            date: "2024 – 2025"
+            content: |-
+              - Digitalizou processos manuais e estruturou coleta de dados com Google Forms/Sheets + QR Code.
+              - Automatizou fluxos e notificações com Python (ex.: disparos/rotinas), reduzindo retrabalho e acelerando a atualização das informações.
+              - Criou dashboards no Power BI, incluindo visualização georreferenciada, para acompanhamento de indicadores.
+      - company: "ALERJ"
+        jobs:
+          - name: "Assistente Administrativo (Banco de Dados e Aplicação Interna)"
+            date: "2023 – 2024"
+            content: |-
+              Assembléia Legislativa do Estado do Rio de Janeiro
+              - Migrou acervo físico para banco SQL, com modelagem e estruturação para consulta.
+              - Desenvolveu uma aplicação simples em Python (Tkinter) para pesquisa e relatórios por usuários não técnicos.
+              - Aumentou a rapidez na localização de informações e padronizou consultas internas.
+      - company: "Servidor Online"
+        jobs:
+          - name: "Administrador e Desenvolvedor"
+            date: "2016 – Presente"
+            content: |-
+              - Administração e moderação de comunidade com 3 mil membros, suporte e organização de equipe.
+              - Desenvolvimento e manutenção de sistemas internos em Lua, com foco em estabilidade e evolução contínua.
+
+  # Education
+  education:
+    enable: true
+    title: "Educação"
+    index: false
+    items:
+      - title: "Bacharelado em Direito"
+        school:
+          name: "Universidade Veiga de Almeida (UVA) · Rio de Janeiro, RJ, Brasil"
+        date: "2021 – Presente"
+        content: |-
+
+          Destaques: formação com foco em responsabilidade, comunicação e atenção a detalhes.
+      - title: "Bacharelado em Sistemas de Informação"
+        school:
+          name: "Universidade Federal Fluminense (UFF) · Niterói, RJ, Brasil"
+        date: "2021 – Presente"
+        content: |-
+
+          Destaques: base técnica em programação, dados e desenvolvimento de soluções.
+      - title: "Ensino Médio"
+        school:
+          name: "Colégio Pedro II · Niterói, RJ, Brasil"
+        date: "2018 – 2020"
+        content: ""
+      - title: "Ensino Médio"
+        school:
+          name: "Instituto Federal · Brasil"
+        date: "2018"
+        content: ""
+      - title: "Equipe de Robótica"
+        school:
+          name: "Colégio Pedro II · Brasil"
+        date: "2014 – 2016"
+        content: |-
+
+          Atividades: programação e montagem de robôs; participação em competições; colaboração em equipe.
+
+  # Achievements
+  achievements:
+    enable: false
+    # title: "Custom Name"
+    items:
+      - title: Google kickstart runner
+        content: I solved all problems with optimal solution.
+        url: https://example.com
+        image: /images/achievement.jpg
+      - title: Facebook Hackathon Winner
+        content: Developed a product using Artificial Intelligence.
+        image: /images/achievement.jpg
+      - title: Hugo Profile
+        content: Developed a theme and getting 1K+ downloads per month.
+        url: "https://github.com/gurusabarish/hugo-profile"
+        image: /images/achievement.jpg
+      - title: Microsoft Imagine Runner
+        content: We are developed a product which can help others.
+      - title: Google Summer of Code
+        content: Contributed to a open source project.
+        url: https://example.com
+
+  # projects
+  projects:
+    enable: true
+    title: "Projetos"
+    items:
+      - title: AI Influencer Studio (LoRA-based)
+        content: Criei e mantive perfis de influencer 100% IA para Instagram, entregando fotos, stories, carrosséis e vídeos com consistência visual. Treinei e ajustei múltiplas LoRAs para fixar a identidade da persona, defini linha editorial/calendário e estruturei um workflow escalável com controle de prompts, referências e presets para produção recorrente e rápida.
+        image: /images/projects/image.jpg
+        badges:
+          - "LoRA"
+          - "instagram"
+
+      - title: Video Pipeline
+        content: Montei um pipeline modular de criação/edição de vídeo com IA usando ComfyUI, com presets e fluxos reutilizáveis para obter consistência, estilo e detalhes com controle fino. Combinei LoRAs voltadas para vídeo com geração/variação via KlingAI, mantendo uma biblioteca organizada de modelos/configs e integrando o resultado à etapa final de edição para entregar criativos curtos prontos para campanha.
+        image: /images/projects/video.mp4
+        badges:
+          - "ComfyUI"
+          - "KlingAI"
+
+      - title: "Video Creative com IA"
+        content: Produzi criativos curtos para campanhas (UGC/direct response) com foco em velocidade, repetibilidade e testes A/B. Usei FaceFusion em um pipeline padronizado para manter consistência de personagem (em personas sintéticas/uso autorizado) e aplicando controles de qualidade visual (artefatos, alinhamento e estabilidade)
+        image: /images/projects/image2.jpg
+        badges:
+          - "FaceFusion"
+          - "UGC"
+
+  #Contact
+  contact:
+    enable: false
+    # title: "Custom Name"
+    content: My inbox is always open. Whether you have a question or just want to say hi, I’ll try my best to get back to you!
+    btnName: Mail me
+    btnLink: mailto:gurusabarisha@gmail.com
+    # formspree:
+    #   enable: true # `contact.email` value will be ignored
+    #   formId: abcdefgh # Take it from your form's endpoint, like 'https://formspree.io/f/abcdefgh'
+    #   emailCaption: "Enter your email address"
+    #   messageCaption: "Enter your message here"
+    #   messageRows: 5
+
+  footer:
+    enable: false
+    recentPosts:
+      enable: false
+    socialNetworks:
+      github: https://github.com
+      linkedin: https://linkedin.com
+      twitter: https://twitter.com
+      instagram: https://instagram.com
+      facebook: https://facebook.com
+
+  # List pages like blogs and posts
+  listPages:
+    disableFeaturedImage: false
+
+  # Single pages like blog and post
+  singlePages:
+    socialShare: true
+    readTime:
+      enable: true
+      content: "min read"
+    scrollprogress:
+      enable: true
+    tags:
+      openInNewTab: true
+
+  # For translations
+  terms:
+    read: "Read"
+    toc: "Table Of Contents"
+    copyright: "All rights reserved"
+    pageNotFound: "Page not found"
+    emailText: "Check out this site"
+
+  datesFormat:
+    article: "Jan 2, 2006"
+    articleList: "Jan 2, 2006"
+    articleRecent: "Jan 2, 2006"
+
+  #customScripts: -| # You can add custom scripts which will be added before </body> tag
+  #  <script type="text/javascript"><!-- any script here --></script>
